@@ -3,9 +3,9 @@ package day01.part2
 import java.lang.Exception
 import kotlin.time.measureTimedValue
 
-object Part2 {
+internal object Part2 {
 
-    fun part2A(input: List<String>) = measureTimedValue {
+    fun execute(input: List<String>) = measureTimedValue {
         input.sumOf {
             listOfNotNull(
                 it.findFirstSpelledDigitOrNull(),

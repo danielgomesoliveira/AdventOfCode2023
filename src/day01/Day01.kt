@@ -4,11 +4,11 @@ import kotlin.time.TimedValue
 
 fun main() {
     fun part1(input: List<String>): TimedValue<Int> {
-        return Part1.part1A(input)
+        return Part1.executeA(input)
     }
 
     fun part2(input: List<String>): TimedValue<Int> {
-        return Part2.part2A(input)
+        return Part2.execute(input)
     }
 
     // test if implementation meets criteria from the description, like:

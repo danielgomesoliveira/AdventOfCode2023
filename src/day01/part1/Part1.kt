@@ -4,14 +4,14 @@ import kotlin.time.measureTimedValue
 
 object Part1 {
 
-    fun part1A(input: List<String>) = measureTimedValue {
+    fun executeA(input: List<String>) = measureTimedValue {
         input.sumOf {
             "${it.first { it.isDigit() }}${it.last { it.isDigit() }}".toInt()
         }
     }
 
 
-    fun part1B(input: List<String>) = measureTimedValue {
+    fun executeB(input: List<String>) = measureTimedValue {
         var result = 0
         input.forEach {
             val value = it.getDigits()
