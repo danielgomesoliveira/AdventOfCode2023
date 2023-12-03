@@ -7,7 +7,7 @@ object Part1 {
     fun executeA(input: List<String>) = measureTimedValue {
 
         val result = input.map {
-            it.takeLastWhile { it != ':' }.toReveal()
+            it.toReveal()
         }.withIndex().sumOf {
             if (it.value.meetsQuantity()) it.index + 1
             else 0
